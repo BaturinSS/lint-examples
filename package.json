@@ -4,7 +4,7 @@
   "description": "Config ESLint and Prettier.",
   "main": "src/index.js",
   "lint-staged": {
-    "*": "eslint --ignore-unknown --write",
+    "*.ts": "eslint --ignore-unknown --write",
     "*": "prettier --ignore-unknown --write"
   },
   "scripts": {
