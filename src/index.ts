@@ -2,13 +2,14 @@ type Grid = string;
 
 console.log("Hello, world!");
 
-export const hello = "world";
-export const hello2 = "world";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-let test = true;
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const test = 10;
+function greetName(name: string) {
+  if (name) {
+    console.log(name);
+  }
+}
 
-let rest = 10,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  rest = 10;
+greetName(Math.random() > 0.5 ? "Josh" : "anonymous");
+
+export const hello4: Grid = "world yay";
+
+const num = 10;

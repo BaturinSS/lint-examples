@@ -21,6 +21,7 @@
   "author": "BSS",
   "license": "ISC",
   "devDependencies": {
+    "path": "^0.12.7",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
     "eslint": "^8.32.0",
