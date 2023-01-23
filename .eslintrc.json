@@ -1,8 +1,5 @@
 {
-  "plugins": [
-    "prettier",
-    "unicorn"
-  ],
+  "plugins": ["prettier", "unicorn"],
   "extends": [
     "airbnb-base",
     "plugin:unicorn/recommended",
