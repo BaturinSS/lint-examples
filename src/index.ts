@@ -14,6 +14,6 @@ export const hello4: Grid = "world yay";
 
 const num = 10;
 
-const num2 = 10;
+const num = 10;
 
 console.log(num2, num);
