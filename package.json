@@ -17,7 +17,8 @@
   "type": "commonjs",
   "keywords": [
     "ESLint",
-    "Prettier"
+    "Prettier",
+    "typescript"
   ],
   "author": "BSS",
   "license": "ISC",
