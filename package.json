@@ -1,24 +1,32 @@
 {
   "name": "lint-examples",
   "version": "0.0.1",
-  "description": "",
+  "description": "Config ESLint and Prettier.",
   "main": "src/index.js",
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
+  },
   "scripts": {
     "build": "tsc",
     "format": "prettier --write .",
+    "lint": "eslint . --max-warnings 0 --report-unused-disable-directives",
+    "lint:fix": "npm run lint --fix",
     "prepare": "husky install"
   },
-  "type": "module",
-  "keywords": [],
-  "author": "",
+  "type": "commonjs",
+  "keywords": [
+    "ESLint",
+    "Prettier"
+  ],
+  "author": "BSS",
   "license": "ISC",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.32.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "prettier": "2.8.3",
     "typescript": "^4.9.4"
-  },
-  "lint-staged": {
-    "*": "prettier --ignore-unknown --write"
   }
 }
