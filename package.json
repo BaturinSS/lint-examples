@@ -4,7 +4,8 @@
   "description": "Config ESLint and Prettier.",
   "main": "src/index.js",
   "lint-staged": {
-    "*": "prettier --ignore-unknown --write"
+    "*": "prettier --ignore-unknown --write",
+    "*.ts": "eslint  --max-warnings 0 --report-unused-disable-directives"
   },
   "scripts": {
     "build": "tsc",
