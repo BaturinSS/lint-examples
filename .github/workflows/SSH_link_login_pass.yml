@@ -1,0 +1,17 @@
+name: SSH_link_login_pass
+#description: Connecting SSH (login and password)
+
+on: push
+
+jobs:
+  SSH_link_login_pass:
+    runs-on: ubuntu-latest
+    steps:
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.DEPLOY_SERVER_HOST }}
+          port: ${{ secrets.DEPLOY_SERVER_PORT }}
+          username: ${{ secrets.DEPLOY_SERVER_USER_NAME }}
+          password: ${{ secrets.DEPLOY_SERVER_USER_PASSWORD }}
+          script: cd frontend; ls -la;
