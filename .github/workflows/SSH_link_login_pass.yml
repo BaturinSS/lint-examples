@@ -10,8 +10,8 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v0.1.7
         with:
-          host: ${{ secrets.DEPLOY_SERVER_HOST }}
-          port: ${{ secrets.DEPLOY_SERVER_PORT }}
-          username: ${{ secrets.DEPLOY_SERVER_USER_NAME }}
-          password: ${{ secrets.DEPLOY_SERVER_USER_PASSWORD }}
+          host: ${{ secrets.NOVO_VM_HOST }}
+          port: ${{ secrets.NOVO_VM_PORT }}
+          username: ${{ secrets.NOVO_VM_LOGIN }}
+          password: ${{ secrets.NOVO_VM_PASSWORD }}
           script: cd frontend; ls -la;
