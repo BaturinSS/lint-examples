@@ -7,10 +7,23 @@ export const CLASS_SECTION_BLOG_BLOG = "blog_blog";
 
 console.log("Hello, world!");
 
-function greetName(name: string) {
+function greetName(name = "anonymous") {
   if (name) {
-    console.log(name);
+    console.log(name as string);
   }
 }
 
 greetName(Math.random() > 0.5 ? "Josh" : "anonymous");
+
+// const run = () => {
+//   console.log("");
+// };
+//
+// class gart {
+//   name: string;
+//   constructor(name: string) {
+//     this.name = name;
+//   }
+// }
+//
+// let fff = { "15": 15 };
