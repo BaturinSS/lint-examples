@@ -9,7 +9,7 @@ console.log("Hello, world!");
 
 function greetName(name = "anonymous") {
   if (name) {
-    console.log(name as string);
+    console.log(name);
   }
 }
 
