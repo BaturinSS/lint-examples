@@ -1,4 +1,5 @@
 name: Lint
+#description: Checking and reformatting ESLint.
 
 on:
   push:

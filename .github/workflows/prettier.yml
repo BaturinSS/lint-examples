@@ -1,4 +1,5 @@
 name: Prettier
+#description: Checking and reformatting Prettier.
 
 on:
   push:
