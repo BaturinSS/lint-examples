@@ -15,6 +15,17 @@ function greetName(name = "anonymous") {
 
 greetName(Math.random() > 0.5 ? "Josh" : "anonymous");
 
+const fuck = "numberNull";
+const test: IT = { str: "imag" };
+
+interface IT {
+  str: string;
+}
+
+// let test:typeof fuck = "numberNull";
+
+console.log(typeof test);
+
 // const run = () => {
 //   console.log("");
 // };
